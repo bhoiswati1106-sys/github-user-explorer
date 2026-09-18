@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub User Explorer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>
+      <svg class="github-logo" viewBox="0 0 24 24" aria-label="GitHub logo">
+        <path
+          fill="currentColor"
+          d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.11.79-.25.79-.56v-2.16c-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.28-1.7-1.28-1.7-1.04-.71.08-.7.08-.7 1.15.08 1.75 1.18 1.75 1.18 1.02 1.75 2.68 1.24 3.33.95.1-.74.4-1.24.73-1.52-2.55-.29-5.23-1.28-5.23-5.68 0-1.25.45-2.27 1.18-3.07-.12-.29-.51-1.46.11-3.04 0 0 .96-.31 3.15 1.17a10.9 10.9 0 0 1 5.74 0c2.19-1.48 3.15-1.17 3.15-1.17.62 1.58.23 2.75.11 3.04.73.8 1.18 1.82 1.18 3.07 0 4.41-2.69 5.38-5.25 5.67.41.35.78 1.04.78 2.1v3.11c0 .31.21.67.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"
+        />
+      </svg>
+      GitHub User Explorer
+    </h1>
+
+    <div class="search-box">
+      <input type="text" id="username" placeholder="Enter GitHub Username" />
+      <button id="searchBtn">Search</button>
+    </div>
+
+    <div id="loading"></div>
+
+    <div id="error"></div>
+
+    <input type="text" id="repoSearch" placeholder="Search repositories" />
+
+    <label for="sortRepos">Sort by :</label>
+
+    <select id="sortRepos">
+      <option value="stars-desc">Stars: High to Low</option>
+      <option value="stars-asc">Stars: Low to High</option>
+      <option value="name-asc">Name: A to Z</option>
+      <option value="name-desc">Name: Z to A</option>
+    </select>
+
+    <div id="recentUsers"></div>
+
+    <div class="category-tabs">
+      <button data-language="all">All</button>
+      <button data-language="JavaScript">JavaScript</button>
+      <button data-language="HTML">HTML</button>
+      <button data-language="CSS">CSS</button>
+    </div>
+
+    <div id="userContainer"></div>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

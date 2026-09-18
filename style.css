@@ -1,0 +1,275 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 30px;
+    background: #f5f7fb;
+    color: #1f2937;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.search-box input {
+    width: 300px;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.search-box input:focus {
+    outline: none;
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+}
+
+.search-box button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #6366f1;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background: #4f46e5;
+}
+
+#repoSearch {
+    display: block;
+    width: 300px;
+    padding: 10px;
+    margin: 0 auto 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+#repoSearch:focus {
+    outline: none;
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+}
+
+#sortRepos {
+    display: block;
+    margin: 0 auto 20px;
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    background: white;
+}
+
+#sortRepos:focus {
+    outline: none;
+    border-color: #6366f1;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+}
+
+label[for="sortRepos"] {
+    display: block;
+    text-align: center;
+    margin-bottom: 8px;
+}
+
+.category-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+}
+
+.category-tabs button {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 20px;
+    background: white;
+    color: #374151;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.category-tabs button:hover {
+    background: #6366f1;
+    color: white;
+}
+
+.category-tabs button:focus {
+    background: #6366f1;
+    color: white;
+    outline: none;
+}
+
+#recentUsers {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+
+}
+
+#recentUsers button {
+    padding: 8px 14px;
+    border: 1px solid #6366f1;
+    border-radius: 20px;
+    background: white;
+    color: #6366f1;
+    cursor: pointer;
+}
+
+#recentUsers button:hover {
+    background: #6366f1;
+    color: white;
+}
+
+#userContainer {
+    max-width: 900px;
+    margin: 0 auto;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+#userContainer:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+#userContainer img {
+    display: block;
+    margin: 0 auto 15px;
+    border-radius: 50%;
+}
+
+#userContainer h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#userContainer p {
+    text-align: center;
+    color: #64748b;
+}
+
+#userContainer ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+#userContainer li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    background: #f8fafc;
+    border-radius: 10px;
+    border: 1px solid #e5e7eb;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#userContainer li:hover {
+    transform: translateY(-2px);
+}
+
+#userContainer p {
+    text-align: center;
+    color: #64748b;
+    margin: 8px 0;
+}
+
+#userContainer p:nth-of-type(n + 2) {
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 10px 15px;
+    background: #f1f5f9;
+    border-radius: 8px;
+}
+
+#userContainer h3 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+#userContainer li a {
+    color: #1f2937;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#userContainer li a:hover {
+    color: #6366f1;
+    text-decoration: underline;
+}
+
+#loading {
+    text-align: center;
+    margin: 20px;
+    color: #6366f1;
+    font-weight: bold;
+}
+
+#error {
+    text-align: center;
+    margin: 15px;
+    color: #ef4444;
+    font-weight: bold;
+}
+
+.github-logo {
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+    vertical-align: middle;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .search-box input,
+    .search-box button,
+    #repoSearch {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    #userContainer {
+        padding: 18px;
+    }
+
+    #userContainer li {
+        flex-direction: column;
+        gap: 8px;
+        align-items: flex-start;
+    }
+}
+
