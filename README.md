@@ -4,9 +4,6 @@ A web app to search any GitHub user and explore their profile and repositories u
 
 🔗 **Live Demo:** https://bhoiswati1106-sys.github.io/github-user-explorer/
 
-
-![GitHub User Explorer Screenshot](docs/screenshot.png)
-
 ## ✨ Features
 
 - Search a GitHub username to view the user's profile card
@@ -31,8 +28,8 @@ github-user-explorer/
 ├── index.html
 ├── style.css
 ├── script.js
-├── docs/
-│   └── screenshot.png
+├── api.js
+├── app.js
 └── README.md
 ```
 
